@@ -4,7 +4,7 @@ Number: Number is a tecnic test to show Clean Arquitect and little examples of M
 # Getting Started
 TODO: to install the project do you need do:
 1.	Installation process
-    - git clone https://github.com/Manger987/NumbersCleanArquitecture
+    - git clone https://github.com/Manger987/NumbersCleanArquitecture.git
     - position over folder Project
     - npm install 
     - npm start
