@@ -1,0 +1,82 @@
+swagger: "3.0"
+info:
+    title: Numeros
+    description: API Numeros
+    version: 0.1.9
+servers:
+    - url: http://localhost:3000/api/v1/numeros/
+      description: Documentación de Api de Numeros
+paths:
+    /obtenerNumerosImpares/{number}:
+        get:
+            summary: autoriza
+            parameters:
+                - name: number
+                  in: path
+                  required: true
+                  description: numero
+                  example: 7
+                  schema:
+                      type: string
+                      example: 13
+            responses:
+                "200":
+                    description: Obtiene numeros impares
+                    content:
+                        application/json:
+                            schema:
+                                type: object
+                "400":
+                    description: es invalido.
+                "404":
+                    description: No se encontro el registro
+                default:
+                    description: inexplicable error
+    /obtenerSumaNumerosImpares/{number}:
+        get:
+            parameters:
+                - name: number
+                  in: path
+                  required: true
+                  description: numero
+                  example: 7
+                  schema:
+                      type: string
+                      example: 13
+            responses:
+                "200":
+                    description: Obtiene la suma de numeros impares, menores a numero dado
+                    content:
+                        application/json:
+                            schema:
+                                type: object
+                "400":
+                    description: es invalido.
+                "404":
+                    description: No se encontro el registro
+                default:
+                    description: inexplicable error
+    /obtenerTriviaNumero/{number}:
+        get:
+            parameters:
+                - name: number
+                  in: path
+                  required: true
+                  description: numero
+                  example: 7
+                  schema:
+                      type: string
+                      example: 13
+            responses:
+                "200":
+                    description: Obtiene trivia del numero dado
+                    content:
+                        application/json:
+                            schema:
+                                type: object
+                "400":
+                    description: es invalido.
+                "404":
+                    description: No se encontro el registro
+                default:
+                    description: inexplicable error                
