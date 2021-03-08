@@ -1,5 +1,5 @@
 {
-  "name": "achs.agendamiento.ms.visita",
+  "name": "Numeros",
   "version": "1.0.0",
   "description": "TODO: Give a short introduction of your project. Let this section explain the objectives or the motivation behind this project.",
   "main": "index.js",
@@ -8,8 +8,7 @@
     "test": "jest"
   },
   "repository": {
-    "type": "git",
-    "url": "https://achsdev.visualstudio.com/278-Agendamiento%20de%20Expertos/_git/ACHS.Agendamiento.MS.Visita"
+    "type": "git"
   },
   "author": "",
   "license": "ISC",
